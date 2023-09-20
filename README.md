@@ -1,31 +1,46 @@
-![image](https://raw.githubusercontent.com/databricks-industry-solutions/.github/main/profile/solacc_logo_wide.png)
+![image](https://github.com/lipyeowlim/public/raw/main/img/logo/databricks_cyber_logo_v1.png)
 
 [![CLOUD](https://img.shields.io/badge/CLOUD-ALL-blue?logo=googlecloud&style=for-the-badge)](https://cloud.google.com/databricks)
 [![POC](https://img.shields.io/badge/POC-10_days-green?style=for-the-badge)](https://databricks.com/try-databricks)
 
+# IoC Search using Mach5
+
+Contact Author: <vinayakb@mach5.io>
+
 ## Business Problem
-<List of the business use case the solution accelerator address>
 
-## Scope
-<How we expect the user to use this content>
+[Mach5](https://mach5.io) is a Databricks partner technology that provides search capabilities at interactive speeds over the data in a Databricks Multi-cloud Lakehouse. The cybersecurity use cases it addresses are:
 
+* Alert triage - When SOC analysts triages alerts, they need ad hoc and interactive searchs on various indicators of compromise (IoCs) such as fragments of domain names, IP addresses, etc. in order to quickly disposition an alert to be a true positive or a false positive. 
+* Incident Response (IR) - When SOC or IR analysts investigates an incident, they need to search IoCs and related assets quickly determine the root cause, the TTPs, and the impact of the incident.
+* Threat hunting - When a threat hunter is hunting for non-alert-related threats, he often starts with a vague hypothesis and need ad hoc and interactive searchs of the data to explore the space of IoCs and formulate the hunting logic.
+
+# Scope
+
+This solution accelerator will provide the notebooks and instructions to 
+
+* setup the Mach5 integration
+* load a sample data set into your Databricks workspace
+* setup and run the Mach5 indexer job in your Databricks workspace
+* run sample queries in an Opensearch dashboard or Kibana UI.
+* run notebooks that leverages the Mach5 search capabilities in Python and SQL.
+
+# Reference Architecture
+
+![usecase_image](https://raw.githubusercontent.com/lipyeowlim/public/main/img/mach5/mach5-architecture.png)
 ___
-<john.doe@databricks.com>
 
-___
-
-
-IMAGE TO REFERENCE ARCHITECTURE
-
-___
-
-&copy; 2022 Databricks, Inc. All rights reserved. The source in this notebook is provided subject to the Databricks License [https://databricks.com/db-license-source].  All included or referenced third party libraries are subject to the licenses set forth below.
+&copy; 2023 Databricks, Inc. All rights reserved. The source in this notebook is provided subject to the Databricks License [https://databricks.com/db-license-source].  All included or referenced third party libraries are subject to the licenses set forth below.
 
 | library                                | description             | license    | source                                              |
 |----------------------------------------|-------------------------|------------|-----------------------------------------------------|
-| PyYAML                                 | Reading Yaml files      | MIT        | https://github.com/yaml/pyyaml                      |
+| opensearch-py | Opensearch Python Client | Apache-2.0        | https://github.com/opensearch-project/opensearch-py         |
 
-## Getting started
+# Getting started with Mach5
+
+TBA
+
+# Getting started with the Databricks Notebooks
 
 Although specific solutions can be downloaded as .dbc archives from our websites, we recommend cloning these repositories onto your databricks environment. Not only will you get access to latest code, but you will be part of a community of experts driving industry best practices and re-usable solutions, influencing our respective industries. 
 
